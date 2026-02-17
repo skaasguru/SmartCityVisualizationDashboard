@@ -1,8 +1,10 @@
 <nav class="navbar glass">
   <div class="logo">AetherCity</div>
   <div class="links">
-    <a routerLink="/3d" routerLinkActive="active">3D Visualization</a>
-    <a routerLink="/dashboard" routerLinkActive="active">Data Dashboard</a>
+    <a routerLink="/3d" routerLinkActive="active" (click)="onNavClick($event, '/3d')">3D Visualization</a>
+    <a routerLink="/gltf-keyframes" routerLinkActive="active" (click)="onNavClick($event, '/gltf-keyframes')">GLTF Keyframes</a>
+    <a routerLink="/ferrari-car" routerLinkActive="active" (click)="onNavClick($event, '/ferrari-car')">Ferrari Car</a>
+    <a routerLink="/dashboard" routerLinkActive="active" (click)="onNavClick($event, '/dashboard')">Data Dashboard</a>
   </div>
 </nav>
 
